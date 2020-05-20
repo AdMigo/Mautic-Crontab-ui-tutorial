@@ -1,5 +1,5 @@
+
 # Mautic-Crontab-ui-tutorial
-Quick N'Dirty Tutorial over Managing Mautic Crons Jobs via Crontab-ui (Crontab GUI)
 
 I like to use Crontab-ui by @alseambusher to manage my Mautic Instace Commands as it handles the Crontab Graphically, takes backups, can send you monitoring emails over your Cron Job statuses (Don't you just hate having to manually check the Logs?🤬) - and more!
 
@@ -9,27 +9,42 @@ Anyway here is a quick rundown of how to install Crontab-ui on a Ubuntu 18.04 Di
 
 Install NodeJS and NPM with the following Commands:
 
-sudo apt-get install curl
-curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
-sudo apt-get install nodejs
+```sudo apt-get install curl```
+
+```curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -```
+
+```sudo apt-get install nodejs```
+
 ---------------------------------
 Check NodeJS & NPM Version numbers with the following commands:
-node -v 
-npm -v 
+
+```node -v```
+
+```npm -v```
+
 ---------------------------------
 Install NodeJS Addons & Yarn Package Manager:
-sudo apt-get install gcc g++ make
-curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
-echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
-sudo apt-get update && sudo apt-get install yarn
+
+```sudo apt-get install gcc g++ make```
+
+```curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -```
+
+```echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list```
+
+```sudo apt-get update && sudo apt-get install yarn```
+
 --------------------------------
 Install Crontab-UI with the following Commands:
-sudo npm install -g crontab-ui
-sudo crontab-ui (This will be an initial Crontab-UI dry run)
+```sudo npm install -g crontab-ui```
+
+```sudo crontab-ui```       (This will be an initial Crontab-UI dry run)
+
 Use the CTRL-C Command to shut down Crontab-ui after the initial dry run
 -------------------------------
 Use the following commands to launch Crontab UI for remote host with basic HTTP Auth:
-sudo HOST=0.0.0.0 PORT=8000 BASIC_AUTH_USER=user BASIC_AUTH_PWD=SecretPassword crontab-ui
+
+```sudo HOST=0.0.0.0 PORT=8000 BASIC_AUTH_USER=user BASIC_AUTH_PWD=SecretPassword crontab-ui```
+
 -------------------------------
 From this point you will then be able to open crontab ui in your browser with a basic http auth login
 
