@@ -74,6 +74,11 @@ Crontab-ui is located within the following Apache Directory:
 
 ```/usr/lib/node_modules/crontab-ui/crontabs/```
 
+If you do not shut down the Crontab-ui via Ctrl-C, then simply shut down the Server, if you are using a Digital Ocean Server you can run
+
+```poweroff```
+
+
 -------------------------------------------
 
 After Installing and perfoming a dry run on Crontab-ui follow the below:
