@@ -43,7 +43,9 @@ Use the CTRL-C Command to shut down Crontab-ui after the initial dry run
 -------------------------------
 Use the following commands to launch Crontab UI for remote host with basic HTTP Auth:
 
-```sudo HOST=0.0.0.0 PORT=8000 BASIC_AUTH_USER=user BASIC_AUTH_PWD=SecretPassword crontab-ui```
+```sudo HOST=0.0.0.0 PORT=8000 BASIC_AUTH_USER=user BASIC_AUTH_PWD=SecretPassword crontab-ui --autosave```
+
+You can remove the ```--autosave``` flag if you do not wish to save Crons created within Crontab-ui to your Mautic Crontab
 
 -------------------------------
 From this point you will then be able to open crontab ui in your browser with a basic http auth login
@@ -55,9 +57,27 @@ When adding cronjobs be sure to click the 'SAVE TO CRONTAB" Button after making 
 Use CTRL-C to close the Crontab-ui instance anytime you are finshed with the cron work.
 -------------------------------
 Notes:
-If you have any access error when installing Crontab use this tutoirial over chnaging your permissions, although if you install as sudo (root) then you should not encounter this issue"
+
+If you have any access error when installing Crontab use this tutoirial over chnaging your permissions, although if you install as sudo (root) then you should not encounter this issue.
+
 https://docs.npmjs.com/resolving-eacces-permissions-errors-when-installing-packages-globally
+
+You May uninstall Crontab-ui anytime with the following Command:
+
+```sudo npm uninstall -g crontab-ui```
+
+You May Reset Crontab-ui with the following command:
+
+```crontab-ui --reset```
+
+Crontab-ui is located within the following Apache Directory:
+
+```/usr/lib/node_modules/crontab-ui/crontabs/```
+
+-------------------------------------------
 
 After Installing and perfoming a dry run on Crontab-ui follow the below:
 
 1. Locate Your Mautic 
+
+You May Unintsa
