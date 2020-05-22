@@ -80,9 +80,3 @@ If you do not shut down the Crontab-ui via Ctrl-C, then simply shut down the Ser
 
 
 -------------------------------------------
-
-After Installing and perfoming a dry run on Crontab-ui follow the below:
-
-1. Locate Your Mautic 
-
-You May Unintsa
