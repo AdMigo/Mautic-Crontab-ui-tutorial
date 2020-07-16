@@ -9,11 +9,11 @@ Anyway here is a quick rundown of how to install Crontab-ui on a Ubuntu 18.04 Di
 
 Install NodeJS and NPM with the following Commands:
 
-```sudo apt-get install curl```
+```sudo apt-get install curl -y```
 
 ```curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -```
 
-```sudo apt-get install nodejs```
+```sudo apt-get install nodejs -y```
 
 ---------------------------------
 Check NodeJS & NPM Version numbers with the following commands:
@@ -25,17 +25,17 @@ Check NodeJS & NPM Version numbers with the following commands:
 ---------------------------------
 Install NodeJS Addons & Yarn Package Manager:
 
-```sudo apt-get install gcc g++ make```
+```sudo apt-get install gcc g++ make -y```
 
 ```curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -```
 
 ```echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list```
 
-```sudo apt-get update && sudo apt-get install yarn```
+```sudo apt-get update && sudo apt-get install yarn -y```
 
 --------------------------------
 Install Crontab-UI with the following Commands:
-```sudo npm install -g crontab-ui```
+```sudo npm install -g crontab-ui -y```
 
 ```sudo crontab-ui```       (This will be an initial Crontab-UI dry run)
 
@@ -64,7 +64,7 @@ https://docs.npmjs.com/resolving-eacces-permissions-errors-when-installing-packa
 
 You May uninstall Crontab-ui anytime with the following Command:
 
-```sudo npm uninstall -g crontab-ui```
+```sudo npm uninstall -g crontab-ui -y```
 
 You May Reset Crontab-ui with the following command:
 
